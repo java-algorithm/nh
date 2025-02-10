@@ -1,6 +1,6 @@
 /**
  * @author nakhoonchoi
- * @date 2025/02/11
+ * @date 2025/02/10
  * @see https://leetcode.com/problems/merge-intervals/description/
  * @mem 46.63MB
  * @time 10ms
@@ -16,16 +16,8 @@ import java.util.*;
 //LeetCode <LeetCode> 'Merge Intervals'
 
 public class LeetCode56 {
-    public static void main(String[] args) {
-        int [][] arr = {{1,2}, {3,4}, {1,10}};
 
-        int [][] result = merge(arr);
-        for(int i=0;i<result.length;i++){
-            System.out.println(Arrays.toString(result[i]));
-        }
-    }
-
-    public static int[][] merge(int[][] intervals) {
+    public int[][] merge(int[][] intervals) {
         List<int []> answerList = new ArrayList<>();
 
         if(intervals.length == 1){
