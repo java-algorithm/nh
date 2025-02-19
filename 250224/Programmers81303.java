@@ -46,7 +46,7 @@ public class Programmers81303 {
         	sb.append("O");
         }
         while(!stack.isEmpty()) {
-        	sb.insert(stack.pop().intValue(), "X");
+        	sb.insert(stack.pop(), "X");
         }
         return sb.toString();
     }
