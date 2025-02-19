@@ -13,17 +13,8 @@
 import java.util.*;
 //프로그래머스 <2021 카카오 인턴십> '표 편집'
 public class Programmers81303 {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int n = 8;
-		int k = 2;
-		//String [] cmd = {"D 2","C","U 3","C","D 4","C","U 2","Z","Z"};
-		String [] cmd = {"D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"};
-		
-		System.out.println(solution(n,k,cmd));
-	}
 
-	public static String solution(int n, int k, String[] cmd) {
+	public String solution(int n, int k, String[] cmd) {
 		Stack<Integer> stack = new Stack<>();
 		int table_size = n;
         for(int i=0;i<cmd.length;i++) {
