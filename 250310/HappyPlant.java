@@ -17,14 +17,7 @@ import java.util.*;
 //'Happy Plant'
 
 public class HappyPlant {
-    public static void main(String[] args) {
-        int [] emotions = {2,1,3,4,3};
-        int [] orders = {2,2,2,2,5,5,5};
-
-        System.out.println(Arrays.toString(getResult(emotions, orders)));
-    }
-
-    public static int[] getResult(int [] emotions, int [] orders){
+    public int [] getResult(int [] emotions, int [] orders){
         int [] result = new int[orders.length];
         Map<Integer, Plant> plantMap = new HashMap<>();
         for(int i=0;i<emotions.length;i++){
@@ -44,7 +37,6 @@ public class HappyPlant {
                     plant.doCycle();
 
                     if(plant.isDead()){
-//                        plantMap.remove(index);
                         removeTargetList.add(index);
                     }
                 }
@@ -60,7 +52,7 @@ public class HappyPlant {
         return result;
     }
 
-    static class Plant{
+    class Plant{
         int curEmotion;
         int initEmotion;
 
