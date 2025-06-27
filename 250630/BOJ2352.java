@@ -64,8 +64,6 @@ public class BOJ2352 {
             }
         }
 
-        System.out.println(Arrays.toString(lastMinValueArr));
-
         System.out.println(lisLength);
     }
 }
